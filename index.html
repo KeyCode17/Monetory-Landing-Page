@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monetory</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -39,27 +40,25 @@
       <section id="pageHome">
         <div class="main-head">
           <div class="container-head">
-            <div class="row">
+            <div class="row" id="flex">
               <div class="col">
                 <div class="container">
                   <div class="text-header">
                     <div class="row">
-                      <h1>
+                      <h1 class="h1head">
                         Financial monitoring application for more efficient
                         lifestyle
                       </h1>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-3 phead">
                       <p>
                         Use a financial monitoring application with various
-                        features and automation systems to save energy and
-                        <br />
-                        time, and your finances will be organized more
-                        efficiently.
+                        features and automation systems to save energy and time,
+                        and your finances will be organized more efficiently.
                       </p>
                     </div>
                     <br />
-                    <div class="row mt-5">
+                    <div class="row mt-3" id="fixbtn">
                       <button id="buttonTry" class="btn btn-animate">
                         Try for free
                       </button>
@@ -79,65 +78,69 @@
       <section id="pageFeatures">
         <div class="features padding-section margin-section">
           <div class="container center">
-            <h1>Why choose use?</h1>
+            <h1>Why choose us?</h1>
           </div>
           <div class="container wrapper-5 center mt--8">
-            <h2 class="text-center">
+            <p class="text-center">
               What is the latest feature that makes it easier for you <br />
               to manage your finance
-            </h2>
+            </p>
           </div>
         </div>
-        <div class="row center mt--6">
-          <div class="column">
-            <div class="card p-5 m-5">
-              <div class="container mt-5 mr-5 ml-5 mb-5">
-                <h4 class="text-center mb-3"><b>Simple</b></h4>
-                <p class="text-center mt-5">
-                  The simple design makes it easier and more comfortable for
-                  users to use it
-                </p>
+        <div class="row center mt-2">
+          <div id="features-slider" class="slider">
+            <figure>
+              <div class="slide">
+                <div class="card p-5 m-5">
+                  <div class="container mt-5 mr-5 ml-5 mb-5">
+                    <h4 class="text-center mb-3"><b>Simple</b></h4>
+                    <p class="text-center mt-5">
+                      The simple design makes it easier and more comfortable for
+                      users to use it
+                    </p>
+                  </div>
+                  <img
+                    class="mt-3"
+                    src="assets/images/simple.png"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                </div>
               </div>
-              <img
-                class="mt-3"
-                src="assets/images/simple.png"
-                alt="Avatar"
-                style="width: 100%"
-              />
-            </div>
-          </div>
-          <div class="column">
-            <div class="card p-5 m-5">
-              <div class="container mt-5 mr-5 ml-5 mb-5">
-                <h4 class="text-center mb-3"><b>Fast</b></h4>
-                <p class="text-center mt-5">
-                  Faster loading to make your time more efficient
-                </p>
+              <div class="slide">
+                <div class="card p-5 m-5">
+                  <div class="container mt-5 mb-5 text-center">
+                    <h4 class="text-center mb-3 ml-s"><b>Fast</b></h4>
+                    <p class="text-center mt-5 ml-s">
+                      Faster loading to make your time more efficient
+                    </p>
+                  </div>
+                  <img
+                    class="mt-3"
+                    src="assets/images/fast.png"
+                    alt="Avatar"
+                    style="width: 100%"
+                  />
+                </div>
               </div>
-              <img
-                class="mt-3"
-                src="assets/images/fast.png"
-                alt="Avatar"
-                style="width: 100%"
-              />
-            </div>
-          </div>
-          <div class="column">
-            <div class="card p-5 m-5">
-              <div class="container mt-5 mr-5 ml-5 mb-5">
-                <h4 class="text-center mb-5"><b>Secure</b></h4>
-                <p class="text-center mt-4">
-                  Very safe application so you don't have to worry about your
-                  data and privacy
-                </p>
+              <div class="slide">
+                <div class="card p-5 m-5">
+                  <div class="container mt-5 mr-5 ml-5 mb-5">
+                    <h4 class="text-center mb-5"><b>Secure</b></h4>
+                    <p class="text-center mt-4">
+                      Very safe application so you don't have to worry about
+                      your data and privacy
+                    </p>
+                  </div>
+                  <img
+                    class="mt-5"
+                    src="assets/images/secure.png"
+                    alt="Avatar"
+                    style="width: 100%; margin-top: 30px"
+                  />
+                </div>
               </div>
-              <img
-                class="mt-5"
-                src="assets/images/secure.png"
-                alt="Avatar"
-                style="width: 100%; margin-top: 30px"
-              />
-            </div>
+            </figure>
           </div>
         </div>
       </section>
@@ -164,11 +167,11 @@
                 />
               </div>
             </div>
-            <div class="row mt-5 mb-5">
+            <div class="row mt-5 mb-5vw">
               <div class="col">
                 <img
                   id="mockup2"
-                  class="float-left ml-2 mr-2 image"
+                  class="float-left ml-2 mr-2 mb-0 image"
                   src="assets/images/mockup2.png"
                   alt=""
                   width="90%"
@@ -176,7 +179,7 @@
               </div>
               <div class="col">
                 <h2 class="title">
-                  It has been supported by all banks in Indonesia.
+                  It has been supported by all banks in Indonesian.
                 </h2>
                 <p class="description mt-6">
                   This application can record each bill with a different type of
@@ -190,15 +193,11 @@
       </section>
       <section id="pageReview">
         <div class="wrapper-f padding-section margin-section">
-          <h1 class="text-center mt-2">What People Say</h1>
+          <h1 class="text-center">What People Say</h1>
           <div class="row">
             <div class="col">
               <div class="container center">
-                <img
-                  class="mt-3 avatar"
-                  src="assets/images/user.png"
-                  alt="Avatar"
-                />
+                <img class="avatar" src="assets/images/user.png" alt="Avatar" />
               </div>
               <div class="text-wrapper text-center">
                 <p class="text-comment">
@@ -210,14 +209,14 @@
                 <p class="mt-3 text-subtitle">
                   Junir WEB Developer, Junior Android Developer
                 </p>
-                <div class="mt-4 text-center">
+                <div style="" class="mt-3 text-center">
                   <span class="elipse"></span>
                   <span class="elipse active mx-5"></span>
                   <span class="elipse"></span>
                 </div>
               </div>
             </div>
-            <div class="col" style="display: none">
+            <!-- <div class="col" style="display: none">
               <div class="container center">
                 <img
                   class="mt-3 avatar"
@@ -256,7 +255,7 @@
                   Junir WEB Developer, Junior Android Developer
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -265,25 +264,31 @@
           <h2 class="text-center">Company</h2>
           <div class="center mt-2">
             <table id="">
-              <tr>
-                <td class="text-center w-20vh">About Me</td>
-                <td class="text-center w-20vh">Privacy Policy</td>
-                <td class="text-center w-20vh">FAQ</td>
-                <td class="text-center w-20vh">Term Of Services</td>
+              <tr class="display-3">
+                <td class="text-center text-info w-20vw">About Me</td>
+                <td class="text-center text-info w-20vw">Privacy Policy</td>
+                <td class="text-center text-info w-20vw">FAQ</td>
+                <td class="text-center text-info w-20vw">Term Of Services</td>
               </tr>
             </table>
           </div>
-          <h2 class="text-center text-name mt-4">Try Monetory Now</h2>
-          <div class="center mt-3">
+          <h2 class="text-center text-name mt-5">Try Monetory Now</h2>
+          <div class="center mt-4">
             <div class="row">
               <div class="col">
                 <a href="https://play.google.com" target="_blank">
-                  <img class="float-right" src="assets/images/py.png" alt=""
+                  <img
+                    class="float-right image-footer"
+                    src="assets/images/py.png"
+                    alt=""
                 /></a>
               </div>
               <div class="col">
                 <a href="https://apple.com" target="_blank">
-                  <img class="float-left" src="assets/images/as.png" alt=""
+                  <img
+                    class="float-left image-footer"
+                    src="assets/images/as.png"
+                    alt=""
                 /></a>
               </div>
             </div>
@@ -303,7 +308,7 @@
           </div>
           <div class="col center">
             <div class="card-round">
-              <p class="text-center white">Or</p>
+              <p class="text-center text-or white">Or</p>
             </div>
           </div>
           <div class="col">
@@ -315,8 +320,8 @@
       </div>
       <div class="row">
         <div class="col center">
-          <div class="card-cancel" style="width: 5vh; height: 5vh">
-            <span class="close-modal mt-5 center">&times;</span>
+          <div class="card-cancel">
+            <span class="close-modal center">&times;</span>
           </div>
         </div>
       </div>

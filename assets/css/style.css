@@ -38,16 +38,17 @@ nav.sticky {
 nav .logo {
   position: relative;
   transition: 0.6s;
+  width: 4vw;
 }
 
 nav .title {
   position: absolute;
-  margin-top: 0.6%;
   font-weight: 600;
   color: #4a4a4a;
-  margin-left: 5%;
   text-decoration: none;
-  font-size: 2em;
+  margin-top: 0.5vw;
+  font-size: 2.5vw;
+  margin-left: 1vw;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
@@ -71,6 +72,10 @@ nav ul {
   filter: drop-shadow(0px 12px 14px rgba(114, 187, 255, 0.548));
 }
 
+.image-footer {
+  width: 25vh;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -82,7 +87,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -120,7 +125,7 @@ nav ul li a:hover {
 .main-content {
   position: relative;
   width: 100%;
-  height: 670vh;
+  height: 100%;
   background: url("../images/BG.png");
   background-size: cover;
   transition: 0.6s;
@@ -136,7 +141,12 @@ nav ul li a:hover {
   margin-top: -4%;
 }
 
+.display-3 {
+  font-size: 2vw;
+}
+
 h2 {
+  font-size: 2.5vw;
   z-index: 100;
   color: #585858;
 }
@@ -154,8 +164,8 @@ h2 {
 .card-round {
   background-color: #85dbee;
   padding-top: 1.5vh;
-  height: 7vh;
-  width: 7vh;
+  height: 4vw;
+  width: 4vw;
   border-radius: 50%;
 }
 
@@ -175,7 +185,7 @@ h2 {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  width: 40vh;
+  width: 25vw;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -183,7 +193,7 @@ h2 {
 .card:hover {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.973);
   transition: 0.3s;
-  width: 41vh;
+  width: 28vw;
 }
 
 .card-layout {
@@ -199,7 +209,9 @@ h2 {
 .p-5 {
   padding: 5%;
 }
-
+.pl-5 {
+  padding-left: 5%;
+}
 .pb-5 {
   padding-bottom: 5%;
 }
@@ -266,6 +278,10 @@ h2 {
   margin-top: 5%;
 }
 
+.mt-1vw {
+  margin-top: 1vw;
+}
+
 .mt-4 {
   margin-top: 4%;
 }
@@ -286,6 +302,10 @@ h2 {
   margin-bottom: 5%;
 }
 
+.mb-5vw {
+  margin-bottom: 10vw;
+}
+
 .mb-4 {
   margin-bottom: 4%;
 }
@@ -300,6 +320,10 @@ h2 {
 
 .mb-1 {
   margin-bottom: 1%;
+}
+
+.mb-0 {
+  margin-bottom: 0%;
 }
 
 .ml-5 {
@@ -368,21 +392,21 @@ h2 {
 }
 
 h4 {
-  font-size: 3vh;
+  font-size: 2.5vw;
   color: #444444;
   transition: 0.6s;
   z-index: 100;
 }
 
 h1 {
-  font-size: 6vh;
+  font-size: 3vw;
   color: #555555;
   transition: 0.6s;
   z-index: 100;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.45vw;
   font-weight: 600;
   color: #646464;
   transition: 0.6s;
@@ -395,7 +419,7 @@ p {
 
 .description {
   font-weight: 400;
-  font-size: 4vh;
+  font-size: 2vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -413,14 +437,14 @@ span {
 
 .text-name {
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 2vw;
   color: #646464;
   transition: 0.6s;
 }
 
 .title {
-  font-weight: 400;
-  font-size: 6vh;
+  font-weight: 800;
+  font-size: 2.6vw;
   color: #646464;
   transition: 0.6s;
 }
@@ -478,10 +502,11 @@ span {
 
 .close-modal {
   color: #555555;
-  font-size: 24px;
+  font-size: 3vw;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
+  margin-top: -0.1vw;
 }
 
 .close-modal:hover {
@@ -497,8 +522,8 @@ span {
   position: relative;
 }
 
-.w-20vh {
-  width: 20vh;
+.w-20vw {
+  width: 20vw;
 }
 
 @keyframes bouncy {
@@ -525,10 +550,26 @@ span {
   }
 }
 
+.slider {
+  overflow: hidden;
+}
+
+.slider figure div {
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slidy infinite;
+}
+
 .elipse {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.5vh;
+  width: 1.5vh;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
@@ -538,8 +579,8 @@ span {
 
 .card-cancel {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 3.6vw;
+  width: 3.6vw;
   margin: 4vh 5vh;
   background-color: #bbb;
   border-radius: 50%;
@@ -560,12 +601,12 @@ span {
   background-color: #ffffff;
   border: none;
   color: #575757;
-  padding: 20px 72px;
+  padding: 1.2vw 3vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 14px;
+  font-size: 1.4vw;
+  border-radius: 15px;
   transition: 0.6s;
   cursor: pointer;
 }
@@ -578,7 +619,7 @@ span {
 @media (max-width: 1199.98px) {
   .main-content {
     overflow-x: hidden;
-    height: 615vh;
+    padding-top: 5vw;
   }
 
   .card-round {
@@ -587,7 +628,7 @@ span {
   }
 
   .img {
-    width: 96%;
+    width: 80%;
   }
 
   .avatar {
@@ -597,22 +638,53 @@ span {
     width: 60%;
     height: 45%;
   }
+
+  .btn {
+    padding: 2.2vw 7vw;
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 991.98px) {
   .main-content {
     overflow-x: hidden;
-    height: 610vh;
+    padding-top: 8vw;
+  }
+
+  .ml-s {
+    margin-left: 8.5vw;
   }
 
   nav .logo {
     margin-top: 4px;
-    width: 70%;
+    width: 5vw;
   }
 
   nav.sticky {
     padding: 20px 40px;
     background: #f3fbfe;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -50%;
+    }
+
+    22% {
+      left: -50%;
+    }
+
+    24% {
+      left: -100%;
+    }
   }
 
   .avatar {
@@ -624,8 +696,8 @@ span {
   }
 
   nav .title {
-    margin-top: 1.5%;
-    font-size: 20px;
+    margin-top: 1%;
+    font-size: 3vw;
     margin-left: 1%;
   }
 
@@ -633,25 +705,71 @@ span {
     font-size: 14px;
   }
 
+  .text-or {
+    font-size: 2vw;
+  }
+
   .img {
-    width: 94%;
+    width: 80%;
   }
 
   .card-round {
-    height: 5vh;
-    width: 5vh;
-    padding-top: 0.6vh;
+    height: 7vh;
+    width: 7vh;
+    padding-top: 2vh;
   }
 
   .modal-content {
     width: 80%;
     height: 45%;
   }
+
+  .card {
+    width: 60vw;
+  }
+  .card:hover {
+    width: 65vw;
+  }
+
+  .btn {
+    padding: 2.4vw 6vw;
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
 }
 
-@media (max-width: 787px) {
+@media (max-width: 768px) {
   .margin-section {
     margin-top: 15vh;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -60%;
+    }
+
+    22% {
+      left: -60%;
+    }
+
+    24% {
+      left: -120%;
+    }
   }
 
   .modal-content {
@@ -659,7 +777,7 @@ span {
     padding-left: 3vh;
     padding-top: 3vh;
     width: 80%;
-    height: 35%;
+    height: 40%;
   }
 
   .avatar {
@@ -672,7 +790,7 @@ span {
 
   nav .logo {
     margin-top: 4px;
-    width: 50%;
+    width: 7vw;
     margin-right: 4px;
   }
 
@@ -690,11 +808,7 @@ span {
 
   .main-content {
     overflow-x: hidden;
-    height: 500vh;
-  }
-
-  #mockup2 {
-    margin-top: 10vh;
+    padding-top: 8vh;
   }
 
   nav.sticky {
@@ -707,29 +821,23 @@ span {
   }
 
   nav .title {
+    font-size: 4vw;
     margin-top: 2%;
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 4vh;
   }
 
   .title {
-    font-size: 4vh;
+    font-weight: 10000vw;
+    font-size: 3vw;
   }
 
   .description {
-    font-size: 2vh;
-  }
-  p {
-    font-size: 15px;
+    font-size: 3vw;
   }
 
   .card-round {
-    height: 30px;
-    width: 30px;
-    padding-top: 5px;
+    height: 6vw;
+    width: 6vw;
+    padding-top: 1vw;
   }
 
   .container-head {
@@ -763,6 +871,14 @@ span {
   .nav-burger div {
     width: 20px;
   }
+
+  .text-or {
+    font-size: 3vw;
+  }
+
+  .img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -770,12 +886,66 @@ span {
     margin-top: 10vh;
   }
 
+  .card-cancel {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .close-modal {
+    font-size: 3vw;
+    margin-top: -0.1vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  .text-info {
+    font-size: 2.2vw;
+  }
+
+  #fixbtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-footer {
+    width: 15vh;
+  }
+
+  .btn {
+    padding: 5vw 14vw;
+    font-size: 3vw;
+  }
+
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+
+    10% {
+      left: 0%;
+    }
+
+    12% {
+      left: -60%;
+    }
+
+    22% {
+      left: -60%;
+    }
+
+    24% {
+      left: -120%;
+    }
+  }
+
   .modal-content {
     padding-right: 3vh;
     padding-left: 3vh;
     padding-top: 3vh;
     width: 80%;
-    height: 30%;
+    height: 28%;
   }
 
   #footer {
@@ -783,9 +953,9 @@ span {
   }
 
   .card-round {
-    height: 30px;
-    width: 30px;
-    padding-top: 5px;
+    height: 7vw;
+    width: 7vw;
+    padding-top: 1vw;
   }
 
   .wrapper-f {
@@ -796,24 +966,15 @@ span {
     padding: 0 10% 0;
   }
 
-  .btn {
-    padding: 13px 45px;
-    font-size: 12px;
-  }
-
   nav .logo {
     margin-top: 4px;
-    width: 50%;
+    width: 7vw;
     margin-right: 4px;
   }
 
   .main-content {
     overflow-x: hidden;
-    height: 445vh;
-  }
-
-  #mockup2 {
-    margin-top: 10vh;
+    padding-top: 0;
   }
 
   nav.sticky {
@@ -827,26 +988,24 @@ span {
 
   nav .title {
     margin-top: 1.4%;
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 3.8vh;
+    font-size: 5vw;
   }
 
   .title {
-    font-size: 3vh;
+    font-weight: 10000vw;
+    font-size: 3vw;
   }
 
   .description {
-    font-size: 1.5vh;
-  }
-  p {
-    font-size: 15px;
+    font-size: 3vw;
   }
 
   .container-head {
     margin-top: 14%;
+  }
+
+  .container {
+    margin: auto;
   }
 
   .nav-links {
@@ -877,8 +1036,45 @@ span {
     width: 20px;
   }
 
+  #flex {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
   .hero {
-    display: none;
+    width: 65vw;
+  }
+
+  h1 {
+    font-size: 3.4vh;
+  }
+
+  .h1head {
+    width: 90%;
+    transform: translate(10%, -40%);
+  }
+  .phead {
+    width: 70%;
+    transform: translate(25%, -30%);
+  }
+
+  #fixbtn {
+    transform: translate(2.5vw, -50%);
+  }
+
+  .img {
+    width: 80%;
+  }
+
+  .close-modal {
+    color: #555555;
+    font-size: 5vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  p {
+    font-size: 3.4vw;
   }
 }
 
